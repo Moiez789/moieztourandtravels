@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{%block title%}
+Ticket UAE |
+{%endblock title%}
+
+{%block body%}
+<div class="container">
+
+<form method="post" action="uaeticket">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Enter your name</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" name="name">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Enter your CNIC number</label>
+        <input type="number" class="form-control" id="exampleInputPassword1" name="cnic">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Enter your Passport number</label>
+        <input type="number" class="form-control" id="exampleInputPassword1" name="passport">
+    </div>
+    <div class="mb-3">
+        <label for="formFile" class="form-label">Enter you Passport size Photo</label>
+        <input class="form-control" type="file" id="formFile" name="image">
+    </div>
+      
+        <select class="form-select" aria-label="Default select example" name="payment">
+        <option selected>Select payment method</option>
+        <option value="1">UBL(United Bank Limited)</option>
+        <option value="2">HBL(Habib Bank Limited)</option>
+        <option value="3">Bank Alflah</option>
+      </select>
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Enter your Accout Number</label>
+        <input type="number" class="form-control" id="exampleInputPassword1" name="account">
+    </div>
+
+        <select class="form-select" aria-label="Default select example" name="place">
+        <option selected>Where you have to go ?</option>
+        <option value="1">Pakistan(Attabad Lake, Hunza)</option>
+        <option value="2">Pakistan(Naran Kaghan)</option>
+        <option value="3">UAE(Burj Khalifa, Dubae)</option>
+        <option value="3">UAE(Umm Al Emarat, Abu Dhabi)</option>
+  
+      </select>
+    <div id="emailHelp" class="form-text">We'll never share your details with anyone else.</div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+{%endblock body%}
+
+
+
+
+

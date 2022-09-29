@@ -1,0 +1,526 @@
+{% extends 'base.html' %} 
+{%block title%} Home | {%endblock title%}
+ {%block body%}
+
+<div class="container my-7 px-0">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        {% load static %}
+        <img
+          src="{% static 'images/zq-lee-VbDjv8-8ibc-unsplash.jpg'%} "
+          width="1200"
+          height="400"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>UAE</h5>
+          <p>Come to Dubae for exploring Beauty.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        {% load static %}
+        <img
+          src="{% static 'images/mehtab-farooq-8qCtP97jgoE-unsplash.jpg'%} "
+          width="1200"
+          height="400"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Paksitan</h5>
+          <p>Visit and explore the beauty of Paksitan.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        {% load static %}
+        <img
+          src="{% static 'images/dan-novac-1naE8177_bI-unsplash.jpg'%} "
+          width="1200"
+          height="400"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Italy</h5>
+          <p>There's no looking at a building after seeing Italy.</p>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<div class="container my-4 mt-10">
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        {% load static %}
+        <img src="{% static 'images/BamboretValleyPakistanPawopa3336CanvaPro.jpg'%} " width="359" height="250" alt="..."/>
+
+        <div class="card-body">
+          <h4>KALASH VALLEYS</h4>
+          <p class="card-text">
+            The valley of Rumbur is particularly stunning. Here, kilometres of
+            dusty road and mountains rumble alongside the Kalash River. The
+            Kalash people live in wooden homes that cling to the high hills, and
+            the women are particularly famous for their brightly-coloured
+            traditional dress and headwear that differs from anything else one
+            can find in Pakistan.
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="uaeticket" class="btn btn-primary stretched-link"
+                >Buy Ticket</a
+              >
+              <a href="info" class="btn btn-primary stretched-link"
+                >More info</a
+              >
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        {% load static %}
+        <img src="{% static 'images/Beautiful-places-in-Pakistan-Hingol-National-Park-LukasBischoffGetty-CanvaPro.jpg'%} "
+          width="359" height="250" alt="..."/>
+
+        <div class="card-body">
+          <h4>HINGOL NATIONAL PARK</h4>
+          <p class="card-text">
+            Pakistanis shouldn’t have any problem entering the park, but
+            foreigners have had mixed experiences. Some who were accompanied by
+            locals have been able to spend a night/ weekend in the park, while
+            others were only given day permission. There is no public transport
+            to the park, so having access to your own transportation is a must.
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="uaeticket" class="btn btn-primary stretched-link"
+                >Buy Ticket</a
+              >
+              <a href="info" class="btn btn-primary stretched-link"
+                >More info</a
+              >
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        {% load static %}
+        <img src="{% static 'images/umar-farooq-pFZKZlLlvUU-unsplash.jpg'%} "width="359" height="250"  alt="..."/>
+
+        <div class="card-body">
+          <h4>Attabad Lake</h4>
+          <p class="card-text">
+            A lake that doesn’t look real… Even when you’re standing right in
+            front of it. Attabad was born out of tragedy when a massive
+            landslide occurred in 2010. The flow of the Hunza River was blocked,
+            and the now-famous lake was created in its wake. Its bright-blue
+            turquoise waters make the it one of the most beautiful places in
+            Pakistan.
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="uaeticket" class="btn btn-primary stretched-link"
+                >Buy Ticket</a
+              >
+              <a href="info" class="btn btn-primary stretched-link"
+                >More info</a
+              >
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        {% load static %}
+        <img  src="{% static 'images/Beautiful-places-in-Pakistan-Deosai-ShahsoftGetty-CanvaPro.jpg'%} "
+        width="359"  height="250"  alt="..."/>
+       
+        <div class="card-body">
+          <h4>DEOSAI PLAINS NATIONAL PARK</h4>
+          <p class="card-text">
+            Deosai is often referred to as the roof of the world. And it kinda
+            is. At 4,117 metres (13,497 feet), the massive plateau is the
+            second-highest on the planet, and is only really accessible during
+            summer. Sprawling emerald-green meadows, snow-capped peaks and
+            glistening blue lakes greet visitors who make the journey to this
+            beautiful spot.
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="uaeticket" class="btn btn-primary stretched-link"
+                >Buy Ticket</a
+              >
+              <a href="info" class="btn btn-primary stretched-link"
+                >More info</a
+              >
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        {% load static %}
+        <img src="{% static 'images/SwatValleyPakistanSAKhanPhotographyCanvaPro.jpg'%} " width="359" height="250" alt="..."/>
+         
+
+        <div class="card-body">
+          <h4>SWAT VALLEY</h4>
+          <p class="card-text">
+            Think bright green fields and forests, picturesque villages, and
+            rivers boasting shades of blue so clear and bright you wouldn’t have
+            thought them real! The true beauty of Swat can be found around the
+            town of Kalam, which serves as a base to the explore the beauty of
+            the valley.Though it has had a rough past, the present and future of Swat Valley are shining very bright. 
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="uaeticket" class="btn btn-primary stretched-link"
+                >Buy Ticket</a
+              >
+              <a href="info" class="btn btn-primary stretched-link"
+                >More info</a
+              >
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        {% load static %}
+        <img src="{% static 'images/yahya-ehsan-L895sqROaGw-unsplash.jpg'%} "  width="359" height="250" alt="..."/>
+        
+
+        <div class="card-body">
+          <h4>Babusar Pass</h4>
+          <p class="card-text">
+            Babusar Pass is also known as Babusar Top is a famous mountain pass at an elevation of 4,173 meter (13,691 ft) and the major tourist attraction. Babusar Pass is the highest pass in Kaghan valley. Best time to visit Babusar Pass is June and July because the surroundings are full of greenery and in winters the roads are covered with snow.You can reach to Babusar Pass from Islamabad in 8 hours.
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="uaeticket" class="btn btn-primary stretched-link"
+                >Buy Ticket</a
+              >
+              <a href="info" class="btn btn-primary stretched-link"
+                >More info</a
+              >
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<p class="text-center">You can easily travel to different places from Naran Kaghan.<p>
+<div class="container pt-lg-3 pl-lg-2 bg-info text-warning">
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Cities</th>
+        <th scope="col">Distance in Km</th>
+        <th scope="col">Travel Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Naran Kaghan to Islamabad</td>
+        <td>276</td>
+        <td>6 hr 30 min</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Naran Kaghan to Murree</td>
+        <td>190</td>
+        <td>5 hr 40 min</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Naran Kaghan to Abbottabad	</td>
+        <td>140</td>
+        <td>4 hr 20 min</td>
+      </tr>
+        <th scope="row">4</th>
+        <td>Naran Kaghan to Taxila</td>
+        <td>220</td>
+        <td>6 hr 10 min</td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>Naran Kaghan to Chitral Valley</td>
+        <td>575</td>
+        <td>15 hr</td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>Naran Kaghan to Hunza Valley</td>
+        <td>320</td>
+        <td>6 hr</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+<div class="container my-4 mt-10">
+  <h2>Travel to Italy,s best places</h2>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        {% load static %}
+        <img src="{% static 'images/Milan-Cathedral-and-Rooftop-Ticket.jpg'%} " width="359" height="250" alt="..."/>
+
+        <div class="card-body">
+          <h4>Milan Cathedral and Rooftop</h4>
+          <p class="card-text">
+            Get the whole Duomo experience with this Milan Super Saver, combining two amazing tours at a discounted price. Take advantage of the skip-the-line entry into one of the world's greatest Gothic cathedrals and then follow your knowledgeable local guide around the sacred structure, learning about its history. After the tour, take a lift up to the roof to get one of the best views of Milan among the arches and buttresses of the cathedral.
+
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="uaeticket" class="btn btn-primary stretched-link"
+                >Buy Ticket</a
+              >
+              <a href="info" class="btn btn-primary stretched-link"
+                >More info</a
+              >
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        {% load static %}
+        <img src="{% static 'images/98.jpg'%} "
+          width="359" height="250" alt="..."/>
+
+        <div class="card-body">
+          <h4>La Maddalena Archipelago Full-Day Boat Tour</h4>
+          <p class="card-text">
+            Take a swim during the first stop at Santa Maria island, known for its turquoise waters. Stop at Budelli to lie on the sand or swim in the natural pools of Spiaggia del Cavaliere, protected from currents and perfect for a relaxing swim. 
+            Once back to the boat, admire the Spiaggia Rosa and its unique pink sand. Visit Spargi to discover its white sandy beaches, rocky coasts, and turquoise waters.
+            
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="uaeticket" class="btn btn-primary stretched-link"
+                >Buy Ticket</a
+              >
+              <a href="info" class="btn btn-primary stretched-link"
+                >More info</a
+              >
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        {% load static %}
+        <img src="{% static 'images/99.jpg'%} "width="359" height="250"  alt="..."/>
+
+        <div class="card-body">
+          <h4>Aquarium of Genoa</h4>
+          <p class="card-text">
+            Enjoy a venue that is home to the biggest display of aquatic biodiversity in Europe. Venture into the fascinating waters of the world as you explore more than 70 tanks of critters.
+            Marvel at animals from the Antarctic, such as penguins, and see sharks, seals, jellyfish, and the colorful fish of the coral barriers. Go to the Cetacean Pavilion,and laugh along with the bottlenose dolphins air pools.
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="uaeticket" class="btn btn-primary stretched-link"
+                >Buy Ticket</a
+              >
+              <a href="info" class="btn btn-primary stretched-link"
+                >More info</a
+              >
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        {% load static %}
+        <img  src="{% static 'images/100.jpg'%} "
+        width="359"  height="250"  alt="..."/>
+       
+        <div class="card-body">
+          <h4>Tower of Pisa & Cathedral</h4>
+          <p class="card-text">
+            Walk past the notoriously long queues and admire both the tower and the cathedral at your own pace. The Tower is the third oldest structure in Piazza del Duomo after the cathedral and the baptistery.
+            The construction of the tower started in 1172 and took place in three stages over a span of 199 years. In 1987, the tower was declared part of the Piazza del Duomo UNESCO World Heritage Site along with the neighboring cathedra
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="uaeticket" class="btn btn-primary stretched-link"
+                >Buy Ticket</a
+              >
+              <a href="info" class="btn btn-primary stretched-link"
+                >More info</a
+              >
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        {% load static %}
+        <img src="{% static 'images/SwatValleyPakistanSAKhanPhotographyCanvaPro.jpg'%} " width="359" height="250" alt="..."/>
+         
+
+        <div class="card-body">
+          <h4>Skip-The-Line Uffizi Gallery </h4>
+          <p class="card-text">
+            Marvel at Italian Renaissance art by some of the greatest artists of all times. See paintings by Michelangelo, Da Vinci, Raffaello, Giotto, Cimabue, Masaccio, and others. Go to the gallery’s most renowned room to see the stunning collection by Botticelli. Admire his “Primavera” and “The Birth of Venus,” and reflect upon his representation of the birth of the goddess as she emerges from the sea foam.
+ 
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="uaeticket" class="btn btn-primary stretched-link"
+                >Buy Ticket</a
+              >
+              <a href="info" class="btn btn-primary stretched-link"
+                >More info</a
+              >
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        {% load static %}
+        <img src="{% static 'images/101.jpg'%} "  width="359" height="250" alt="..."/>
+        
+
+        <div class="card-body">
+          <h4>Babusar Pass</h4>
+          <p class="card-text">
+            Marvel at Italian Renaissance art by some of the greatest artists of all times. See paintings by Michelangelo, Da Vinci, Raffaello, Giotto, Cimabue, Masaccio, and others. Go to the gallery’s most renowned room to see the stunning collection by Botticelli. Admire his “Primavera” and “The Birth of Venus,” and reflect upon his representation of the birth of the goddess as she emerges from the sea foam.
+
+          </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="uaeticket" class="btn btn-primary stretched-link"
+                >Buy Ticket</a
+              >
+              <a href="info" class="btn btn-primary stretched-link"
+                >More info</a
+              >
+            </div>
+            <small class="text-muted">9 mins</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<section class="">
+  <footer class="text-center text-white" style="background-color: #0a4275;">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: CTA -->
+      <section class="">
+        <p class="d-flex justify-content-center align-items-center">
+          <span class="me-3">Register for free</span>
+          <button type="button" class="btn btn-outline-light btn-rounded">
+            <a href="signup">
+            Sign up!
+            </a>
+          </button>
+        
+        </p>
+      </section>
+      <!-- Section: CTA -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">www.moieztour&travels.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</section>
+
+{%endblock body%}
